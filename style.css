@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+.banner{
+     position: relative;
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: url(img/image8.jpg);
+     background-size: cover;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+      font-size: 5rem;
+      color: #fff;
+}
+.banner .content p{
+    font-size: 1rem;
+    color: #fff;
+}
+.btn{
+    font-size: 1rem;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 8px;
+}
+/*header section*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.7s; 
+}
+/*sticky for tye navigation to be visible on every page*/
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+/*end of sticky*/
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+/*making sticky visible for logo*/
+header.sticky .logo{
+    color: #111;
+}
+/* end ofmaking sticky visible for logo*/
+header .logo span{
+    color: #ff0157;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+/*making sticky visible for naviagtion options*/
+header.sticky .navigation li a{
+    color: #111;
+}
+/*end of sticky visible for naviagtion options*/
+
+
+header .navigation li a:hover{
+    color: #ff0157;
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+.titleTxt{
+    color: #111;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.titleTxt span{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    /*min-height: 300px;*/
+    height: 100%;
+}
+.row .col50 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*books section*/
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.books .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.books .content .box{
+    width: 440px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.books .content .box .imgBx{
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+.books .content .box .imgBx img{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+.books .content .box .text{
+    padding: 15px 0 5px;
+}
+.books .content .box .text h3{
+    font-weight: 400;
+    color: #111;
+}
+/*end of books section*/
+
+/*start of review section*/
+.reviews{
+    background: url(img/image8.jpg);
+    background-size: cover;
+}
+.white .titleTxt,
+.white p{
+    color: #fff;
+}
+.reviews .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+
+}
+.reviews .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.reviews .content .box .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.reviews .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.reviews .content .box .text{
+    text-align: center;
+}
+.reviews .content .box .text p{
+    color: #666;
+    font-style: italic
+}
+.reviews .content .box .text h3{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #ff0157;
+    font-weight: 600;
+}
+/*end of review section*/
+
+
+
+/*start of contact section*/
+.contact{
+    background: url(img/reading.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    
+}
+.contactForm{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactForm h3{
+    color: #111;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm .inputbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputbox input,
+.contactForm .inputbox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+    
+}
+.contactForm .inputbox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border:none ;
+}
+/*end of contact section*/
+
+
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+.copyrightText p{
+    color: #333;
+
+}
+.copyrightText a{
+    color: #ff0157;
+    font-weight:500 ;
+    text-decoration: none;
+}
+
+
+@media(max-width: 991px){
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation{
+        margin-left: 0;
+    }
+    header .navigation li a {
+       
+        color: #111;
+        font-size: 1.6em;
+        
+    }
+   .menuToggle{
+       position: relative;
+       width: 40px;
+       height: 40px;
+       background: url(img/menu.png);
+       background: size 30px;
+       background-repeat: no-repeat;
+       background-position: center;
+       cursor: pointer;
+   }
+   .menuToggle.active{
+    background: url(img/close.png);
+    background: size 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+   }
+   header.sticky .menuToggle{
+       filter: invert(1);
+   }
+  
+   section {
+    padding: 20px;
+   }
+   
+.banner .content h2 {
+    font-size: 3em;
+    color: #fff;
+}
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.row .col50 {
+    position: relative;
+    width: 100%;
+}
+
+}
